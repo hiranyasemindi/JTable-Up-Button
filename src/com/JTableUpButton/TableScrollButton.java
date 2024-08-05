@@ -86,7 +86,7 @@ public class TableScrollButton extends JLayeredPane{
     private class ScrollLayerUI extends LayerUI<JScrollPane> {
 
         private Shape shape;
-        private Color color = new Color(60, 148, 225);
+        private Color color = new Color(251, 113, 33);
         private boolean mousePressed;
         private boolean mouseHovered;
         private final Image image = new ImageIcon(getClass().getResource("/com/JTableUpButton/up.png")).getImage();
@@ -114,12 +114,12 @@ public class TableScrollButton extends JLayeredPane{
             Graphics2D g2 = (Graphics2D) g.create();
             g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
             if (mousePressed) {
-                g2.setColor(new Color(10, 92, 137));
+                g2.setColor(new Color(178, 68, 5));
             } else {
                 if (mouseHovered) {
-                    g2.setColor(new Color(14, 122, 181));
+                    g2.setColor(new Color(222, 89, 13));
                 } else {
-                    g2.setColor(new Color(18, 149, 220));
+                    g2.setColor(new Color(251, 113, 33));
                 }
             }
             int gapx = scroll.getVerticalScrollBar().isShowing() ? scroll.getVerticalScrollBar().getWidth() : 0;
